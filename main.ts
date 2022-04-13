@@ -16,12 +16,142 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . f f f f f f f f f f . . . 
         . . . . f f f f f f f f . . . . 
         . . . . . . . . . . . . . . . . 
-        `, mySprite2, 50, 50)
+        `, mySprite2, 0, 50)
+    projectile2 = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . 2 2 . . . . 
+        . . . . . . . . . 2 2 . . . . . 
+        . . . . . 2 2 2 2 2 . . . . . . 
+        . . . . . . 2 . . . . . . . . . 
+        . . . f f 2 2 f f f . . . . . . 
+        . . . f f f f f f f f f f . . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f f f f f f f . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, mySprite2, 50, 0)
+    projectile2 = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . 2 2 . . . . 
+        . . . . . . . . . 2 2 . . . . . 
+        . . . . . 2 2 2 2 2 . . . . . . 
+        . . . . . . 2 . . . . . . . . . 
+        . . . f f 2 2 f f f . . . . . . 
+        . . . f f f f f f f f f f . . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f f f f f f f . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, mySprite2, -50, 0)
+    projectile2 = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . 2 2 . . . . 
+        . . . . . . . . . 2 2 . . . . . 
+        . . . . . 2 2 2 2 2 . . . . . . 
+        . . . . . . 2 . . . . . . . . . 
+        . . . f f 2 2 f f f . . . . . . 
+        . . . f f f f f f f f f f . . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f f f f f f f . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, mySprite2, 0, -50)
 })
+controller.player2.onButtonEvent(ControllerButton.A, ControllerButtonEvent.Pressed, function () {
+    projectile = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . 2 2 . . . . 
+        . . . . . . . . . 2 2 . . . . . 
+        . . . . . 2 2 2 2 2 . . . . . . 
+        . . . . . . 2 . . . . . . . . . 
+        . . . f f 2 2 f f f . . . . . . 
+        . . . f f f f f f f f f f . . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f f f f f f f . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, mySprite, 0, 50)
+    projectile = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . 2 2 . . . . 
+        . . . . . . . . . 2 2 . . . . . 
+        . . . . . 2 2 2 2 2 . . . . . . 
+        . . . . . . 2 . . . . . . . . . 
+        . . . f f 2 2 f f f . . . . . . 
+        . . . f f f f f f f f f f . . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f f f f f f f . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, mySprite, 50, 0)
+    projectile = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . 2 2 . . . . 
+        . . . . . . . . . 2 2 . . . . . 
+        . . . . . 2 2 2 2 2 . . . . . . 
+        . . . . . . 2 . . . . . . . . . 
+        . . . f f 2 2 f f f . . . . . . 
+        . . . f f f f f f f f f f . . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f f f f f f f . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, mySprite, -50, 0)
+    projectile = sprites.createProjectileFromSprite(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . 2 2 . . . . 
+        . . . . . . . . . 2 2 . . . . . 
+        . . . . . 2 2 2 2 2 . . . . . . 
+        . . . . . . 2 . . . . . . . . . 
+        . . . f f 2 2 f f f . . . . . . 
+        . . . f f f f f f f f f f . . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . f f f f f f f f f f f f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f f f f f f f f . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, mySprite, 0, -50)
+})
+let projectile: Sprite = null
 let projectile2: Sprite = null
 let mySprite2: Sprite = null
+let mySprite: Sprite = null
 tiles.setCurrentTilemap(tilemap`level1`)
-let mySprite = sprites.create(img`
+mySprite = sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
